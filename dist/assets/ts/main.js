@@ -642,12 +642,12 @@ var _tinySlider = require("tiny-slider");
     document.querySelectorAll(".page-scroll").forEach((e)=>e.addEventListener("click", ()=>{
             console.log(e, "test");
             if (navbarToggler !== null) navbarToggler?.classList?.remove("active");
-            if (navbarCollapse !== null) navbarCollapse?.classList?.remove("show");
+            if (navbarCollapse !== null) navbarCollapse?.classList?.toggle("hidden");
         }));
     if (navbarToggler !== null) navbarToggler.addEventListener("click", function() {
         console.log("test");
         navbarToggler?.classList?.toggle("active");
-        if (navbarCollapse !== null) navbarCollapse?.classList?.toggle("show");
+        if (navbarCollapse !== null) navbarCollapse?.classList?.toggle("hidden");
     });
     const hero = document.getElementById("hero-area");
     if (hero !== null && hero !== undefined) {

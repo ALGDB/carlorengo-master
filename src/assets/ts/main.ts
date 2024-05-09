@@ -98,7 +98,7 @@ import { tns } from "tiny-slider";
         navbarToggler?.classList?.remove("active");
       }
       if (navbarCollapse !== null) {
-        navbarCollapse?.classList?.remove("show");
+        navbarCollapse?.classList?.toggle("hidden");
       }
     })
   );
@@ -109,7 +109,7 @@ import { tns } from "tiny-slider";
       navbarToggler?.classList?.toggle("active");
 
       if (navbarCollapse !== null) {
-        navbarCollapse?.classList?.toggle("show");
+        navbarCollapse?.classList?.toggle("hidden");
       }
     });
   }
