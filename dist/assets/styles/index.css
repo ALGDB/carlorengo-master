@@ -624,6 +624,10 @@ img, video {
   padding-left: .75rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
