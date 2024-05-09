@@ -1,0 +1,43 @@
+{
+  "name": "carlorengo",
+  "version": "1.0.0",
+  "description": "",
+  "targets": {
+    "frontend": {
+      "source": [
+        "src/index.html",
+        "src/assets/ts/main.ts",
+        "src/assets/styles/index.scss",
+        "src/about-me/index.html",
+        "src/articles/articles.html",
+        "src/bruxismo/bruxismo.html",
+        "src/sitemap.xml"
+      ]
+    },
+    "default": {
+      "distDir": "./dist"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel && npm run copy",
+    "build": "parcel build",
+    "copy": "copy src/.htaccess dist"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.7.0",
+    "@parcel/packager-xml": "^2.12.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "@parcel/transformer-webmanifest": "^2.7.0",
+    "@parcel/transformer-xml": "^2.12.0",
+    "parcel": "latest",
+    "postcss": "^8.4.16",
+    "sharp": "^0.31.1",
+    "tailwindcss": "^3.1.8"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tiny-slider": "^2.9.4"
+  }
+}
